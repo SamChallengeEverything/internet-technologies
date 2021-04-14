@@ -18,7 +18,8 @@
         <button id="my-btn">Go!</button>
     </div>
     <div>
-        <h2>Selected Stock: <span id="my-stock-display">TODO</span></h1>
+        <h2>Selected Stock:  
+            <span id="my-stock-display">TODO</span></h1>
     </div>
     <script type="text/javascript">
         console.log("Hello this is a review...")
@@ -31,14 +32,26 @@
 
         var myButton = document.getElementByID ("my-btn")
 
+        var inputUserName = document.getElementByID("my-user-name")
+        var stockSelector = document.getElementById("my-stock-selector")
+
+        var stockDisplay = document.getElementByID("my-stock-display")
+
         function handleClick(){
-            console.log("You Clicked e")
+            console.log("You Clicked Me")
+            console.log("User Name:", "TODO")
+            console.log("STOCK SYMBOL:", "TODO")
         }
+
+        //update the page
+        
+        var stockDisplay.innerText = stockSelector.value
+
 
 
         myButton.addEventListener("click", handleClick, false)
 
-        
+
 
         //handleClick()
    
